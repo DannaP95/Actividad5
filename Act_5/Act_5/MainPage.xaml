@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Act_5"
+             x:Class="Act_5.MainPage">
+
+    <StackLayout Orientation="Vertical" Margin="20" VerticalOptions="CenterAndExpand">
+        
+        <Label Text="Ingrese su nombre :)" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+        <Entry x:Name="elEntry" Placeholder="Aqui"></Entry>
+
+        <Picker x:Name="Intentos" SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+            <Picker.Items>
+                <x:String>3</x:String>
+                <x:String>5</x:String>
+                <x:String>10</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button Text="Comenzar" Clicked="OnClick"></Button>                              
+       
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Act_5.Page2">
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" Margin="20" VerticalOptions="CenterAndExpand">
+
+            <Label x:Name="labeltotal" FontSize="Large" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="Black"></Label>
+            
+                <StackLayout Orientation="Horizontal">
+                <Label x:Name="numero1" FontSize="Medium"></Label>
+                <Label x:Name="oper" FontSize="Medium"></Label>
+                <Label x:Name="numero2" FontSize="Medium"></Label>
+                </StackLayout>
+            <Entry x:Name="Respuesta" Placeholder="Respuesta"></Entry>
+            <Button Text="Aceptar" Clicked="siguiente"></Button>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
